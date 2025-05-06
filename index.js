@@ -8,7 +8,7 @@ $(document).ready(function() {
         success: function(data) {
             parsed = Papa.parse(data, {header: true});
 
-            allData = parsed.data.filter(d => d.Country_Region).slice(0, 499);
+            allData = parsed.data.filter(d => d.Country_Region);
             console.log(allData);
 
             popularFiltros();
